@@ -37,6 +37,14 @@
     "description": {
       "type": "richtext"
     },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "archive",
+        "draft",
+        "published"
+      ]
+    },
     "image": {
       "model": "file",
       "via": "related",
