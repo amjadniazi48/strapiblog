@@ -17,7 +17,7 @@ module.exports = {
       ]);
     }
 
-    const data = await strapi.services.events.find({ user: user.id });
+    const data = await strapi.services.events.findOne({ user: user.id });
 
     if (!data) {
       return ctx.notFound();
