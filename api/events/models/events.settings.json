@@ -37,7 +37,6 @@
     "description": {
       "type": "richtext"
     },
-   
     "image": {
       "model": "file",
       "via": "related",
@@ -50,7 +49,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "users_permissions_user": {
+    "user": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "events"

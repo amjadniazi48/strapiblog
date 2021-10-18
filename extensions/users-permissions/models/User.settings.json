@@ -60,7 +60,7 @@
       "configurable": false
     },
     "events": {
-      "via": "users_permissions_user",
+      "via": "user",
       "collection": "events"
     }
   }

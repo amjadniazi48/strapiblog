@@ -10,6 +10,7 @@ module.exports = {
     // Get logged in users
   async me(ctx) {
     const user = ctx.state.user;
+    console.log(user)
 
     if (!user) {
       return ctx.badRequest(null, [
@@ -17,7 +18,7 @@ module.exports = {
       ]);
     }
 
-    const data = await strapi.services.events.findOne({ id: user.id });
+    const data = await strapi.services.events.find({ user: user.id });
 
     if (!data) {
       return ctx.notFound();
